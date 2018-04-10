@@ -57,10 +57,10 @@ Pretty clear what the credentials are that we need to configure. This is, howeve
 Your .env will therefore contain the following
 
 ```
-DB_HOST=mariadb 
-DB_PORT=3306
-DB_DATABASE=lagoon
-DB_USERNAME=lagoon
-DB_PASSWORD=lagoon
+AMAZEEIO_DB_HOST=mariadb 
+AMAZEEIO_DB_PORT=3306
+AMAZEEIO_DB_DATABASE=lagoon
+AMAZEEIO_DB_USERNAME=lagoon
+AMAZEEIO_DB_PASSWORD=lagoon
 ```
 
