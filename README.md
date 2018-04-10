@@ -65,3 +65,7 @@ AMAZEEIO_DB_PASSWORD=drupal
 ```
 
 You might wonder what's with all the _Drupal_? Well, Amazee is one of the premier Drupal shops, and a lot of the tooling is built around Drupal. We'll get around to building Lumen specific images soon enough though.
+
+### Attribution
+
+This setup is mostly a rip off of the [Amazeeio Wordpress example](https://github.com/amazeeio/wordpress-example). Thanks, chaps.
