@@ -1,6 +1,6 @@
 docker-compose-yaml: docker-compose.yml
 
-project: wordpress-example
+project: wordpress-example #TODO: ADD YOUR PROJECT NAME
 endpoint: api-lagoon-master.lagoon.ch.amazee.io:31472
 api: api-lagoon-master.lagoon.ch.amazee.io:80
 
