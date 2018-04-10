@@ -46,11 +46,11 @@ Don't stress though, there's not that much of this TODO.
 Lagoon set environment variables for the Database connections automatically.
 We need to make Lumen aware of these settings. This means, specifically, overriding the Database settings. 
 
-If we take a look at the Dockerfile for the mariadb image you'll see the [DB connection environment variables](https://github.com/amazeeio/lagoon/blob/master/images/mariadb/Dockerfile#L22) being specified. By default these are:
+If we take a look at the Dockerfile for the mariadb image you'll see the [DB connection environment variables](https://github.com/amazeeio/lagoon/blob/master/images/mariadb-drupal/Dockerfile#L4) being specified. By default these are:
 
-* MARIADB_DATABASE=lagoon
-* MARIADB_USER=lagoon
-* MARIADB_PASSWORD=lagoon
+* MARIADB_DATABASE=drupal
+* MARIADB_USER=drupal
+* MARIADB_PASSWORD=drupal
 
 Pretty clear what the credentials are that we need to configure. This is, however, customizable _if_ you wish to mess with environment variables. 
 
@@ -59,8 +59,9 @@ Your .env will therefore contain the following
 ```
 AMAZEEIO_DB_HOST=mariadb 
 AMAZEEIO_DB_PORT=3306
-AMAZEEIO_DB_DATABASE=lagoon
-AMAZEEIO_DB_USERNAME=lagoon
-AMAZEEIO_DB_PASSWORD=lagoon
+AMAZEEIO_DB_DATABASE=drupal
+AMAZEEIO_DB_USERNAME=drupal
+AMAZEEIO_DB_PASSWORD=drupal
 ```
 
+You might wonder what's with all the _Drupal_? Well, Amazee is one of the premier Drupal shops, and a lot of the tooling is built around Drupal. We'll get around to building Lumen specific images soon enough though.
