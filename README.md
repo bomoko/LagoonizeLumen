@@ -1,6 +1,6 @@
 # Lagoonize Lumen
 
-So you want to run [lumen](https://lumen.laravel.com/) on [Amazee.io's] latest and greatest platform Lagoon? Well, you've come to the right place.
+So you want to run [lumen](https://lumen.laravel.com/) on [Amazee.io's](http://amazee.io) latest and greatest platform Lagoon? Well, you've come to the right place.
 
 What this repo provides are sane default Lagoon and docker settings for Lumen based projects. The idea is that you should be able to copy the files provided into a bog standard Lumen installation, make a handful of changes, and your Lumen app will be Lagoon ready.
 
@@ -12,6 +12,10 @@ We're not covering anything that's not _specifically_ about getting a Lumen inst
 If you don't have a background, we hereby introduce you to the documentation.
 
 [Lagoon Documentation.](http://lagoon.readthedocs.io/en/latest/)
+
+
+Further, we assume that you've [installed Lumen](https://lumen.laravel.com/docs/5.6/installation) in the usual way.
+
 
 ## Overview
 
@@ -27,6 +31,8 @@ Our setup instantiates impmements the following containers
 
 
 ## Project configuration
+
+The first thing you'll want to do is copy the files in this repo's `./src/` directory into the root of your Lumen installation (*_do not forget the dotfiles_*).
 
 There are a few places where you'll need to customize the Docker and Lagoon setups. Specifically, you'll want to put your project name and local dev URLs into the .lagoon.yml and docker-compose.yml files.
 
