@@ -1,9 +1,3 @@
 FROM amazeeio/php:7.1-cli
-COPY ./composer.json ./composer.lock /app/
-
-RUN composer install --no-dev
-
-#RUN ['php", "/app/artisan", "migrate"]
-
 ENV WEBROOT=public
 ENV PAGER=less

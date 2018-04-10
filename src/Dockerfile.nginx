@@ -11,8 +11,6 @@ COPY lagoon/stagefile/stagefile-*.conf /etc/nginx/conf.d-available/
 COPY lagoon/stagefile/stagefile.sh /etc/nginx/helpers/stagefile.sh
 RUN chmod +x /etc/nginx/helpers/stagefile.sh && /etc/nginx/helpers/stagefile.sh
 
-COPY --from=builder /app /app
-
 ENV WEBROOT=public
 
 RUN ls  /etc/nginx/conf.d/
